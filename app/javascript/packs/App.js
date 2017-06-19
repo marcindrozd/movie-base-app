@@ -21,8 +21,8 @@ class App extends React.Component {
           {this.props.children}
 
           <Switch>
-            <Route path="/movies" render={MoviesPage} />
-            <Route exact path="/" render={HomePage} />
+            <Route path="/movies" component={MoviesPage} />
+            <Route exact path="/" component={HomePage} />
 
             <Route render={({ location }) => (
               <div>

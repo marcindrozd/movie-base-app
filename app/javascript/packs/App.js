@@ -18,7 +18,6 @@ class App extends React.Component {
       <Router>
         <div className="container-fluid">
           <Header />
-          {this.props.children}
 
           <Switch>
             <Route path="/movies" component={MoviesPage} />
